@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+  <script>
+    AOS.init();
+  </script>
+    <script>
+        $(document).ready(function(){
+          var i = 0;
+        $("#toggle").click(function(){
+           var k = i%2;
+           if(k==0){
+             $(".nav ul").removeClass("unlist");
+             i++;
+           }
+           else{
+            $(".nav ul").addClass("unlist");
+              i++;
+           }
+        });
+        });
+        
+        </script>
+    <div class="banner">
+        <div class="header">
+            <h1>Hey, it's shyam.</h1>
+            <div data-aos="fade-up" data-aos-duration="3000">
+            <p>Web developer</p>
+          </div>
+        </div>
+        
+    </div>
+
+    <div class="nav">
+      
+        <div class="logo">
+          <div data-aos="fade-right" data-aos-duration="3000">
+          <img src="images/LOGO.jpg">
+          </div>
+        
+        <div class="menu-btn" id="toggle">
+          <div class="menu-btn-burger"></div>
+        </div>
+        </div>
+        
+        <div class="listDiv" data-aos="fade-left" data-aos-duration="1500">
+        <ul class="unlist">
+          <li><a href="#services">Services</a>
+          </li>
+          <li><a href="#">projects</a>
+            </li>
+         
+          <li><a href="administration">Administration</a>
+            </li>
+          <li><a href="faq">FAQ</a>
+            </li>
+          <li><a href="aboutUs">About</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+    <div id="wave">
+     
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </div>
+    <div class="desctiption">
+      <div class="desctiption-image">
+        <div id="myimage"data-aos="fade-right" data-aos-duration="1500" >
+          <img src="images/sliimage.jpg">
+        </div>
+          
+        </div>
+        <div class="desctiption-text">
+          <div data-aos="fade-down-left" data-aos-duration="1000" data-aos-easing="linear">
+            <h1>HI.</h1>
+          </div>
+          <div data-aos="fade-left" data-aos-duration="1200" data-aos-easing="linear">
+            <p>I'm a web developer based in Kharagpur,India. I have a passion for web development and love to create for web and mobile devices.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="linear">
+            <p>I am a developer, so i know how to create your website to run across device using the latest technologies available.</p>
+         </div>
+
+          
+        </div>
+    </div>
+    <div class="parallex">
+      <div class="parallex-image">
+        <img src="images/parallex.jpg">
+      </div>
+      <div class="parallex-text" id="paratext">
+        <h1>My work</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta deleniti modi sed aperiam minima eaque inventore, officia quisquam qui hic odit quas ab necessitatibus! Blanditiis excepturi voluptate ex a nisi?,</p>
+      <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis alias tempora, praesentium error rerum quia, illum vitae corporis quidem ex asperiores quo odio vel ipsa, quam debitis accusamus beatae voluptate.</span>
+      </div>
+      
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
