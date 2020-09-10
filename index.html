@@ -15,23 +15,7 @@
   <script>
     AOS.init();
   </script>
-    <script>
-        $(document).ready(function(){
-          var i = 0;
-        $("#toggle").click(function(){
-           var k = i%2;
-           if(k==0){
-             $(".nav ul").removeClass("unlist");
-             i++;
-           }
-           else{
-            $(".nav ul").addClass("unlist");
-              i++;
-           }
-        });
-        });
-        
-        </script>
+    
     <div class="banner">
         <div class="header">
             <h1>Hey, it's shyam.</h1>
@@ -113,5 +97,22 @@
     </div>
     
     <script src="script.js"></script>
+    <script>
+        $(document).ready(function(){
+          var i = 0;
+        $("#toggle").click(function(){
+           var k = i%2;
+           if(k==0){
+             $(".nav ul").removeClass("unlist");
+             i++;
+           }
+           else{
+            $(".nav ul").addClass("unlist");
+              i++;
+           }
+        });
+        });
+        
+        </script>
 </body>
 </html>
